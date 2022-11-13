@@ -17,6 +17,11 @@ def main_page():
     rando_words = sample(my_words, 10)
     return render_template('home.html', words=rando_words)
 
+@app.route('/board')
+def board():
+    board_tiles = [tile for tile in boggle_game.make_board()]
+    return render_template('board.html', board=board_tiles)
+
 
 if __name__ == '__main__':
     app.run(debug=True)

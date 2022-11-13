@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/boggle.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is the board</h1>
+
+    <table>
+        <tr>
+            {% for tile in board[0] %}
+            <td>{{tile}}</td>
+            {% endfor %}
+        </tr>
+
+        <tr>
+            {% for tile in board[1] %}
+            <td>{{tile}}</td>
+            {% endfor %}
+        </tr>
+        <tr>
+            {% for tile in board[2] %}
+            <td>{{tile}}</td>
+            {% endfor %}
+        </tr>
+        <tr>
+            {% for tile in board[3] %}
+            <td>{{tile}}</td>
+            {% endfor %}
+        </tr>
+        <tr>
+            {% for tile in board[4] %}
+            <td>{{tile}}</td>
+            {% endfor %}
+        </tr>
+
+
+
+    </table>
+    
+
+    <a href="/">Go back home</a>
+</body>
+</html>

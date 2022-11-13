@@ -145,3 +145,7 @@ class Boggle():
         # Sad panda.
 
         return False
+
+example = Boggle()
+print(dir(example))
+print(example.make_board())
